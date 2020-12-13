@@ -1,0 +1,1 @@
+ tshark -r capture.pcap -Y 'udp.port == 22' -T fields -e udp.port

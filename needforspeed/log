@@ -1,0 +1,7 @@
+b main      0x100978
+
+//get_key   0x10099c
+b *0x800099c
+
+//call get_key   0x100997
+set $rip=0x8000997

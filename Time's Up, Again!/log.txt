@@ -1,0 +1,3 @@
+rm /tmp/f; mkfifo /tmp/f
+cat /tmp/f |  ./times-up-again | (echo $a > /tmp/f;cat )
+cat /tmp/f |  ./times-up-again | (read a;echo $a> /tmp/f;cat )

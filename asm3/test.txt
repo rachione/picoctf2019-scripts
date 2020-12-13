@@ -1,0 +1,39 @@
+asm3:
+	<+0>:	push   ebp
+	<+1>:	mov    ebp,esp
+	<+3>:	xor    eax,eax
+	<+5>:	mov    ah,BYTE PTR [ebp+0xa] 6c
+	<+8>:	shl    ax,0x10
+	<+12>:	sub    al,BYTE PTR [ebp+0xf] df
+	<+15>:	add    ah,BYTE PTR [ebp+0xe] e2
+	<+18>:	xor    ax,WORD PTR [ebp+0x10] 450f
+	<+22>:	nop
+	<+23>:	pop    ebp
+	<+24>:	ret    
+
+
+
+0xd4 6c 99 35	+0x8
+0xdf e2 87 22	+0xc
+0xb3 35 45 0f	+0x10
+
+
+
+
+
+
+
+
+
+
+
+ah =0x6c
+ax =0x6c00
+eax =0x6c000000	(shl 0x10)
+eax =0x6bffff21	(sub 0xdf)
+eax =0x6c00e121  (add 0xe200)
+eax =0x6c00a42e (e121 xor 0x450f)
+
+
+hex(((0x6c00<<0x10)-0xdf+0xe200)^0x450f)
+

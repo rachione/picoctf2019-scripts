@@ -1,0 +1,1 @@
+for i in file*;do cd $i;for j in file*;do strings $j|grep pico;done;cd ..;done;

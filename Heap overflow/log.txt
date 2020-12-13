@@ -1,0 +1,3 @@
+b *0x08048AA1
+i proc mappings
+x/20xw  0x98f9000

